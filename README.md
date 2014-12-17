@@ -5,4 +5,4 @@ clase Naranjero para la implementacion de threads usando mutex y conditionVariab
 
 Autores:
   - Francisco J Alderete Gonzalez
-  . Eduardo J Diaz Dioniz
+  - Eduardo J Diaz Dioniz
