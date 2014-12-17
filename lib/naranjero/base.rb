@@ -15,15 +15,17 @@ class Naranjero
 			
 			if @altura > 10 && rand(2) > 0 	#Si se cumple esta condicion el arbol muere
 				@estaVivo = false
-				print "\e[#{32}m#{"Oh, no! El arbol es muy viejo y ha muerto :( \n"}\e[0m"
+				"Oh, no! El arbol es muy viejo y ha muerto :( \n"
 			elsif @altura > 2 	#Si se cumple esta condicion el arbol dara frutos
 				@contador = (@altura * 15 - 25).to_i
-				print "\e[#{32}m#{"Este año tu arbol mide #{@altura.round(2)} y ha producido #{@contador} naranjas\n"}\e[0m"
+				"Este año tu arbol mide #{@altura.round(2)}"+
+				" y ha producido #{@contador} naranjas \n"
 			else
-				print "\e[#{32}m#{"Este año tu arbol mide #{@altura.round(2)} y es demasiado jover para dar frutos \n"}\e[0m"
+				"Este año tu arbol mide #{@altura.round(2)}"+
+				" y es demasiado jover para dar frutos \n"
 			end
 		else
-			print "\e[#{32}m#{"Un año despues, el arbol sigue muerto :( \n"}\e[0m"
+				"Un año despues, el arbol sigue muerto :( \n"
 		end
 	end
 
@@ -31,12 +33,12 @@ class Naranjero
 		if @estaVivo
 			if @contador > 0
 				@contador = @contador - 1
-				print "\e[#{32}m#{"Recoges una jugosa y deliciosa naranja \n"}\e[0m"
+				"Recoges una jugosa y deliciosa naranja \n"
 			else
-				print "\e[#{32}m#{"No hay naranjas \n"}\e[0m"
+				"No hay naranjas \n"
 			end
 		else 
-			print "\e[#{32}m#{"El arbol esta muerto :( \n"}\e[0m"
+				"El arbol esta muerto :( \n"
 		end
 	end
 end

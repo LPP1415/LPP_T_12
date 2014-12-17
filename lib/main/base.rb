@@ -17,7 +17,7 @@ class Main
 			sleep(sleeping)
 			print "\e[#{31}m#{"Orange Picker woke up after sleeping for #{sleeping}\n"}\e[0m"
 			@mutex.synchronize do
-				@naranjero.recolectar_una
+				print "\e[#{32}m#{@naranjero.recolectar_una}\e[0m"
 				print "\e[#{31}m#{"Orange picker waiting patiently...\n"}\e[0m"			
 				if @naranjero.estaVivo
 					@cv.wait(@mutex) 
@@ -33,7 +33,7 @@ class Main
 			sleep(sleeping)
 			print "\e[#{31}m#{"AgeUP woke up after sleeping for #{sleeping}\n"}\e[0m"
 			@mutex.synchronize do
-				@naranjero.uno_mas
+				print "\e[#{32}m#{@naranjero.uno_mas}\e[0m"
 				@cv.signal
 			end
 		end
