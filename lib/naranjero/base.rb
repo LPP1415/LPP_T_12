@@ -15,26 +15,28 @@ class Naranjero
 			
 			if @altura > 10 && rand(2) > 0 	#Si se cumple esta condicion el arbol muere
 				@estaVivo = false
-				'Oh, no! El arbol es muy viejo y ha muerto :('
+				print "\e[#{32}m#{"Oh, no! El arbol es muy viejo y ha muerto :( \n"}\e[0m"
 			elsif @altura > 2 	#Si se cumple esta condicion el arbol dara frutos
 				@contador = (@altura * 15 - 25).to_i
-				"Este año tu arbol mide #{@altura}m" + 
-				" y ha producido #{@contador} naranjas" 
+				print "\e[#{32}m#{"Este año tu arbol mide #{@altura.round(2)} y ha producido #{@contador} naranjas\n"}\e[0m"
 			else
-				"Este año tu arbol mide #{@altura}m " + 
-				" y es demasiado jover para dar frutos"
+				print "\e[#{32}m#{"Este año tu arbol mide #{@altura.round(2)} y es demasiado jover para dar frutos \n"}\e[0m"
 			end
 		else
-			'Un año despues, el arbol sigue muerto. :('
+			print "\e[#{32}m#{"Un año despues, el arbol sigue muerto :( \n"}\e[0m"
 		end
 	end
 
 	def recolectar_una
-		if @contador > 0
-			@contador = @contador - 1
-			'Recoges una jugosa y deliciosa naranja'
-		else
-			'No hay naranjas '
+		if @estaVivo
+			if @contador > 0
+				@contador = @contador - 1
+				print "\e[#{32}m#{"Recoges una jugosa y deliciosa naranja \n"}\e[0m"
+			else
+				print "\e[#{32}m#{"No hay naranjas \n"}\e[0m"
+			end
+		else 
+			print "\e[#{32}m#{"El arbol esta muerto :( \n"}\e[0m"
 		end
 	end
 end
