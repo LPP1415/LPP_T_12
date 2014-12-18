@@ -18,12 +18,13 @@ class Main
 			sleep(sleeping)
 			print "\e[#{31}m#{"Orange Picker woke up after sleeping for #{sleeping}\n"}\e[0m"
 			@mutex.synchronize do
-				print "\e[#{32}m#{@naranjero.recolectar_una}\e[0m"
+
 				print "\e[#{31}m#{"Orange picker waiting patiently...\n"}\e[0m"			
 				if @naranjero.estaVivo
-					@cv.wait(@mutex) 
-				end
-			end
+					@cv.wait(@mutex)
+                    print "\e[#{32}m#{@naranjero.recolectar_una}\e[0m"
+                end
+            end
 		end	
 		end
 		@ths << op
