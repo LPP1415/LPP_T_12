@@ -1,7 +1,8 @@
+=begin
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-
+require 'lib/naranjero/version'
 Gem::Specification.new do |spec|
   spec.name          = "naranjero"
   spec.authors       = ["Eduardo"]
@@ -17,3 +18,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
 end
+=end
