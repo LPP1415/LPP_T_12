@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /.bundle/
 /.yardoc
 /Gemfile.lock
@@ -13,7 +13,6 @@
 *.o
 *.a
 mkmf.log
-=======
 *~
 *.swp
 *.gem
@@ -28,4 +27,4 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
->>>>>>> bdd18eb609aa951fb8e62b0dd1a4d99812571ba4
+
