@@ -2,6 +2,10 @@
 [![Build Status](https://travis-ci.org/LPP1415/LPP_T_12.svg?branch=master)](https://travis-ci.org/LPP1415/LPP_T_12)
 TODO: Write a gem description
 
+## Autores
+* Eduardo Jesús Díaz Dioniz
+* Francisco José Alderete González
+
 ## Installation
 
 Add this line to your application's Gemfile:
