@@ -1,5 +1,5 @@
 # Naranjero
-
+[![Build Status](https://travis-ci.org/LPP1415/LPP_T_12.svg?branch=master)](https://travis-ci.org/LPP1415/LPP_T_12)
 TODO: Write a gem description
 
 ## Installation
