@@ -7,6 +7,7 @@ class Main
 		@mutex = Mutex.new
 		@cv = ConditionVariable.new
 		@naranjero = naranjero
+		@ths = []
 	end
 
 	def getOranges
@@ -25,6 +26,7 @@ class Main
 			end
 		end	
 		end
+		@ths << op
 	
 		ageUP = Thread.new do 
 		until(!@naranjero.estaVivo)
@@ -38,7 +40,8 @@ class Main
 			end
 		end
 		end
-		[op,ageUP]
+		@ths << ageUP
+		return @ths
 	end
 end
 if __FILE__ == $0
