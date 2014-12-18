@@ -60,7 +60,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.6.2)
+  bundler (~> 1.7)
   guard
   guard-bundler
   guard-rspec
